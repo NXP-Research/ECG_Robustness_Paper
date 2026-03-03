@@ -1,0 +1,24 @@
+# Copyright 2025 - 2026 NXP
+# SPDX-License-Identifier: MIT
+
+# --- Model Selection ---
+ARCHITECTURE = "CNN"  # "MLP" or "CNN"
+
+# --- Data Configuration ---
+TIME_STEPS = 512
+CHANNELS = 12
+
+# --- Training Hyperparameters ---
+BATCH_SIZE = 256
+LEARNING_RATE = 0.0001
+LEARNING_RATE_PLATEAU_1 = 0.00001
+LEARNING_RATE_PLATEAU_2 = 0.000001
+NORM_CLIP = 1.0
+
+# --- NAS parameters ---
+NAS_EPOCHS = 50
+NAS_PATIENCE = 10
+NAS_VAL_FREQUENCY = 5
+RETRAIN_EPOCHS = 100
+RETRAIN_PATIENCE = 20
+RETRAIN_VAL_FREQUENCY = 5

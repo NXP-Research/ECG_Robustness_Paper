@@ -1,0 +1,130 @@
+{
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "spdxVersion": "SPDX-2.3",
+  "creationInfo": {
+    "created": "2026-02-24T10:44:22Z",
+    "creators": [
+      "Organization: NXP"
+    ],
+    "licenseListVersion": "3.26"
+  },
+  "name": "ECGROB-1.0",
+  "dataLicense": "CC0-1.0",
+  "documentNamespace": "https://nxp.com/spdx/e0112172-5a30-4e9f-964b-08e8e3bf59af",
+  "packages": [
+    {
+      "SPDXID": "SPDXRef-package-e0112172-5a30-4e9f-964b-08e8e3bf59af",
+      "name": "ECGROB",
+      "versionInfo": "1.0",
+      "licenseConcluded": "(MIT)",
+      "licenseDeclared": "(MIT)",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: ECGROB",
+      "supplier": "NOASSERTION",
+      "externalRefs": [],
+      "filesAnalyzed": false
+    },
+    {
+      "SPDXID": "SPDXRef-package-e010cece-d13c-4f48-87d6-2553d491ba3a",
+      "name": "denoising-diffusion-pytorch",
+      "versionInfo": "2.1.1",
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "homepage": "https://github.com/lucidrains/denoising-diffusion-pytorch",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: denoising-diffusion-pytorch",
+      "supplier": "NOASSERTION",
+      "externalRefs": [],
+      "filesAnalyzed": false
+    },
+    {
+      "SPDXID": "SPDXRef-package-f8b48f1c-38d2-4f3a-8a1a-788524e17f19",
+      "name": "normflows",
+      "versionInfo": "1.7.3",
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "homepage": "https://github.com/VincentStimper/normalizing-flows",
+      "downloadLocation": "https://pypi.org/project/normflows/1.7.3",
+      "originator": "Organization: pypi",
+      "supplier": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "OTHER",
+          "referenceLocator": "cf6d25fd-f4b7-41fb-8c9c-b7d6ad390f4e",
+          "referenceType": "BlackDuck-ComponentOrigin"
+        },
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:pypi/normflows@1.7.3",
+          "referenceType": "purl"
+        }
+      ],
+      "filesAnalyzed": false
+    },
+    {
+      "SPDXID": "SPDXRef-package-050b6b0b-a667-4c8f-b72a-0e8c29e764fb",
+      "name": "PTB-XL",
+      "versionInfo": "1.0.3",
+      "licenseConcluded": "CC-BY-4.0",
+      "licenseDeclared": "CC-BY-4.0",
+      "homepage": "https://physionet.org/content/ptb-xl/1.0.3/",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Person: Patrick Wagner, Nils Strodthoff, Ralf-Dieter Bousseljot, Wojciech Samek, Tobias Schaeffter",
+      "supplier": "NOASSERTION",
+      "externalRefs": [],
+      "filesAnalyzed": false,
+      "comment": "Wagner, P., Strodthoff, N., Bousseljot, R., Samek, W., & Schaeffter, T. (2022). PTB-XL, a large publicly available electrocardiography dataset (version 1.0.3). PhysioNet. RRID:SCR_007345. https://doi.org/10.13026/kfzx-aw45\n\nWagner, P., Strodthoff, N., Bousseljot, R.-D., Kreiseler, D., Lunze, F.I., Samek, W., Schaeffter, T. (2020), PTB-XL: A Large Publicly Available ECG Dataset. Scientific Data. https://doi.org/10.1038/s41597-020-0495-6\n\nGoldberger, A., Amaral, L., Glass, L., Hausdorff, J., Ivanov, P. C., Mark, R., ... & Stanley, H. E. (2000). PhysioBank, PhysioToolkit, and PhysioNet: Components of a new research resource for complex physiologic signals. Circulation [Online]. 101 (23), pp. e215–e220. RRID:SCR_007345."
+    },
+    {
+      "SPDXID": "SPDXRef-package-585d825e-a24b-4191-b1c0-737195bf7c2c",
+      "name": "tensorflow/text",
+      "versionInfo": "v2.20.0",
+      "licenseConcluded": "Apache-2.0",
+      "licenseDeclared": "Apache-2.0",
+      "homepage": "http://github.com/tensorflow/text",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: tensorflow",
+      "supplier": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "OTHER",
+          "referenceLocator": "66918d8b-2de1-42fc-85ee-4d0e507e9b09",
+          "referenceType": "BlackDuck-ComponentOrigin"
+        },
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:github/tensorflow/text@v2.20.0",
+          "referenceType": "purl"
+        }
+      ],
+      "filesAnalyzed": false
+    }
+  ],
+  "relationships": [
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-package-e0112172-5a30-4e9f-964b-08e8e3bf59af"
+    },
+    {
+      "spdxElementId": "SPDXRef-package-e0112172-5a30-4e9f-964b-08e8e3bf59af",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-package-050b6b0b-a667-4c8f-b72a-0e8c29e764fb"
+    },
+    {
+      "spdxElementId": "SPDXRef-package-e0112172-5a30-4e9f-964b-08e8e3bf59af",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-package-585d825e-a24b-4191-b1c0-737195bf7c2c"
+    },
+    {
+      "spdxElementId": "SPDXRef-package-e0112172-5a30-4e9f-964b-08e8e3bf59af",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-package-e010cece-d13c-4f48-87d6-2553d491ba3a"
+    },
+    {
+      "spdxElementId": "SPDXRef-package-e0112172-5a30-4e9f-964b-08e8e3bf59af",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-package-f8b48f1c-38d2-4f3a-8a1a-788524e17f19"
+    }
+  ]
+}
